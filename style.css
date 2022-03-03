@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    padding: 10px;
+}
+
+html{
+    background: url(./images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    background-color: rgb(242, 245, 247);
+    padding-left: 50px;
+    
+}
+
+.anchor{
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+    margin-left: auto;
+    padding-right: 50px;
+    color: rgba(255, 0, 0, 0.733);
+    
+    
+}
