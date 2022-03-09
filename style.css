@@ -61,3 +61,27 @@ html{
 }
 
 /*body section 2*/
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.icons{
+    display: flex;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.descrip{
+    display: flex;
+    padding-top: 75px;
+    color: antiquewhite;
+    font-size: 24px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+}
