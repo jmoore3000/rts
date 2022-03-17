@@ -60,6 +60,17 @@
             <p style="color: antiquewhite; text-align: center; font-size: 24px; padding-left: 180px; padding-right: 180px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-top: 30px;">Have a project you'd like to start?  Send us a message and let's set up a consultation. </p>
         </div>
         
+        <form action="contact.php" method="get">
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="text" name="email" placeholder="Your E-mail">
+            <input type="text" name="phone" placeholder="Your Phone Number">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Type Your Message Here...">
+
+            </textarea>
+            <button type="submit" name="send">Send</button>
+        </form>
     </div>  
 </body>
 </html>
