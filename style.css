@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a{
     padding: 10px;
@@ -97,31 +98,31 @@ html{
 }
 
 /*contact form styling*/
-.contactform{
+
+.contactForm{
     max-width: 500px;
     margin: 2rem auto;
     border: 2px solid antiquewhite;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 3rem;
     background-color: antiquewhite;
 }
 
-input, textarea{
-    display: block;
-    width: 100%;
-    border: 2px solid lightblue;
-    border-radius: 8px;
-    padding:.5rem;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 label{
     display: block;
     padding: 1rem 0 .5rem;
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+input, textarea{
+display: block;
+width: 100%;
+border: 2px solid lightblue;
+border-radius: 8px;
+padding:.5rem;
+font-size: 18px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sendBtn{
@@ -134,6 +135,16 @@ label{
     cursor: pointer;
     transition: .3sec background-color ease;
 }
+
 #sendBtn:hover{
     background-color: rgb(150, 183, 212);
+}
+
+.error{
+    color: red;
+
+}
+
+.error-border{
+    border-bottom: 1px solid red;
 }

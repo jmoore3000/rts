@@ -61,44 +61,39 @@
         </div>
 <!--start of contact form-->
         
-        <form class="contactform" action="contact.php" method="get">
+    <div id="overlay">
+        <form class="contactForm" onsubmit="event.preventDefault(); validateForm()">
             
-            <label for="firstname">
-                First Name
-            </label>
-            <input type="text" id="firstname" placeholder="First Name">
-            
-            <label for="lastname">
-                Last Name
-            </label>
-            <input type="text" id="lastname" placeholder="Last Name">
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" placeholder="First Name">
+            <small class="error"></small>
 
-            <label for="email">
-                Your E-mail
-            </label>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" placeholder="Last Name">
+            <small class="error"></small>
+
+            <label for="telephone">Telephone Number: </label>
+            <input type="tel" id="telephone" placeholder="Telephone Number">
+            <!--<small class="error"></small> -->
+
+            <label for="email">Your E-mail: </label>
             <input type="email" id="email" placeholder="Your E-mail">
+            <small class="error"></small>
 
-            <label for="telephone">
-                Telephone Number
-            </label>
-            <input type="tel" id="telephone" placeholder="Your Phone Number">
+            <label for="message">Message: </label>
+            <textarea style="resize:none" id="message" placeholder="Your Message" rows="6"> </textarea>
+            <small class="error"></small>
 
-            <label for="subject">
-                Subject
-            </label>
-            <input type="text" id="subject" placeholder="Subject">
-            
-            <label for="message">
-                Message
-            </label>
-            <textarea id="message" placeholder="Type Your Message Here...">
-
-            </textarea>
-            
-            <input id="sendBtn" type="submit" value="send">
-        
+        <!--submit button-->
+            <div class="center">
+                <input id="sendBtn" type="submit" value="Send Message"> 
+                <p id="success"></p>
+            </div>    
         </form>
+    </div>
+       
             
-    </div>  
+    
+    <script src="./js/java.js"></script> 
 </body>
 </html>
