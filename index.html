@@ -12,11 +12,11 @@
     <!--Header section that will contain a logo and page anchors-->
     <div class="header">
         <div>
-            <img src="./images/logo.PNG" alt="Reboot tech solutions logo" width="300px" height="auto">
+            <img src="./images/Reboot Tech Solutions-logos_transparent.png" alt="Reboot tech solutions logo" width="400px" height="auto" style="padding-top: 10px;">
         </div>
         <div class="anchor">
-            <a>Services</a>
-            <a>Contact Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
         </div>
     </div>
 
@@ -36,6 +36,7 @@
     </div>  
     
 <!--body section 2-->
+    <p id="services"></p>
     <div class="services">
         <div>
             <p style="color: yellow; font-size: 45px; font-weight: bold; padding-bottom: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> Our Services</p>
@@ -53,16 +54,18 @@
         </div>
     </div>  
     <div class="contact">
+        
         <div class="title">
             <p>Contact Us</p>
         </div>
+       
         <div>
             <p style="color: antiquewhite; text-align: center; font-size: 24px; padding-left: 180px; padding-right: 180px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-top: 30px;">Have a project you'd like to start?  Send us a message and let's set up a consultation. </p>
         </div>
 <!--start of contact form-->
-        
+    <p id="contact"></p>   
     <div id="overlay">
-        <form class="contactForm" onsubmit="event.preventDefault(); validateForm()">
+        <form id="contactForm" onsubmit="event.preventDefault(); validateForm()">
             
             <label for="firstName">First Name: </label>
             <input type="text" id="firstName" placeholder="First Name">
@@ -70,7 +73,7 @@
 
             <label for="lastName">Last Name: </label>
             <input type="text" id="lastName" placeholder="Last Name">
-            <small class="error"></small>
+            <!--<small class="error"></small> -->
 
             <label for="telephone">Telephone Number: </label>
             <input type="tel" id="telephone" placeholder="Telephone Number">
@@ -81,13 +84,13 @@
             <small class="error"></small>
 
             <label for="message">Message: </label>
-            <textarea style="resize:none" id="message" placeholder="Your Message" rows="6"> </textarea>
+            <textarea style="resize:none" id="message" placeholder="Your Message"> </textarea>
             <small class="error"></small>
 
         <!--submit button-->
             <div class="center">
                 <input id="sendBtn" type="submit" value="Send Message"> 
-                <p id="success"></p>
+                <p style="color: green;" id="success"></p>
             </div>    
         </form>
     </div>

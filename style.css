@@ -4,7 +4,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a{
-    padding: 10px;
+    padding: 10px;    
+    color: yellow;
+    text-decoration: none;
+    
 }
 
 html{
@@ -13,6 +16,7 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
 /*header*/
@@ -99,7 +103,7 @@ html{
 
 /*contact form styling*/
 
-.contactForm{
+#contactForm{
     max-width: 500px;
     margin: 2rem auto;
     border: 2px solid antiquewhite;

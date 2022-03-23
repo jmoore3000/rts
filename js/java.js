@@ -31,15 +31,16 @@
         }
 
         if(!errorFlag){
-            success.innerText = "Success!";
+            success.innerText = "Thank you we will be in touch!";
         }
 }
 
 //clearing error and success messages
     function clearMessages(){
-        for(let i=0; i < errorNodes.length; i++){
+        for(let i = 0; i < errorNodes.length; i++){
             errorNodes[i].innerText = "";
         }
+        
         success.innerText = "";
         firstName.classList.remove("error-border");
         message.classList.remove("error-border");
@@ -50,4 +51,9 @@
     function emailIsValid(email){
         let pattern = /\S+@\S+\.\S+/;
         return pattern.test(email);
+    }
+
+//clearing input fields on refresh
+    window.onload = function() {
+        document.getElementById('contactForm').reset();
     }
