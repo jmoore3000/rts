@@ -18,14 +18,14 @@
             errorFlag = true
         }
 
-        if(message.value.length < 1){
-            errorNodes[1].innerText = "Please Include a Message.";
+        if(message.value.length < 1 || message.value == ''){
+            errorNodes[2].innerText = "Please Include a Message.";
             message.classList.add("error-border");
             errorFlag = true
         }
 
         if(!emailIsValid(email.value)){
-            errorNodes[2].innerText = "E-mail Not Valid.";
+            errorNodes[1].innerText = "E-mail Not Valid.";
             email.classList.add("error-border"); 
             errorFlag = true
         }
